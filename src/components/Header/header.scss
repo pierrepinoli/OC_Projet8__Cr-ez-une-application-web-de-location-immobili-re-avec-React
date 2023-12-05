@@ -1,0 +1,58 @@
+header {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.navbar__box {
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+
+}
+
+.navbar__box--typography {
+    color: #FF6060;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    /* 34.224px */
+}
+
+.navbar__links {
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Styles pour le NavLink actif */
+.navbar__links.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Styles pour le NavLink en cours de traitement */
+.navbar__links.pending {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+/* Styles pour le NavLink en cours de transition */
+.navbar__links.transitioning {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+.logo--size {
+    width: 210.322px;
+    height: 68px;
+}

@@ -1,0 +1,33 @@
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer__box {
+    display: flex;
+    flex-direction: column;
+    margin: 66px 33% 29px 33%;
+    align-items: center;
+}
+
+.logo--color {
+    color: white;
+}
+
+.logo--size {
+    width: 122px;
+    height: 39.444px;
+}
+
+.footer p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    /* 34.224px */
+}
