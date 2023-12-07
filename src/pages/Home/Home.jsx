@@ -1,11 +1,11 @@
-import Banner from "../../components/Banner/Banner.jsx"
+import BannerHome from "../../components/Banners/BannerHome.jsx"
 import Cards from "../../components/Cards/Cards.jsx"
 import './home.scss';
 
 function Home () {
     return ( 
         <main>
-            <div><Banner /></div>
+            <div><BannerHome /></div>
             <div><Cards /></div>
         </main>
     )
