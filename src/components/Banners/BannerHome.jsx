@@ -4,7 +4,7 @@ import './banner.scss';
 function BannerHome() {
   return (
     <div className="banner">
-      <img className="image--size" src={BannerPictureCliffs} alt="bannières" />
+      <img className="image--size image--brigthness" src={BannerPictureCliffs} alt="bannières" />
       <h1>Chez vous, partout et ailleurs</h1>
     </div>
   )

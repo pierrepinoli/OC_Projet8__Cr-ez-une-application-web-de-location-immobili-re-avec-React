@@ -1,5 +1,4 @@
 .banner {
-
     height: 223px;
     display: flex;
     justify-content: center;
@@ -28,4 +27,8 @@ h1 {
     /* Pour maintenir le ratio hauteur/largeur de l'image */
     display: block;
 
+}
+
+.image--brigthness {
+    filter: brightness(0.8);
 }

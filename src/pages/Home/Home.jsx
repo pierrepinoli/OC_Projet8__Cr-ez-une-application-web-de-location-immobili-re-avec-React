@@ -5,10 +5,14 @@ import './home.scss';
 function Home () {
     return ( 
         <main>
-            <div><BannerHome /></div>
-            <div><Cards /></div>
+            <section>
+                <div><BannerHome /></div>
+            </section>
+            <section>
+                <div><Cards /></div>
+            </section>
         </main>
     )
-}
+};
 
-export default Home
+export default Home;

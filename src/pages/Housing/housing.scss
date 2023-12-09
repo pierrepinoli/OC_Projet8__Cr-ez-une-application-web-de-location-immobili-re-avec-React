@@ -1,0 +1,80 @@
+.section__housing {
+    padding-top: 30px;
+}
+
+.title__bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title__box h2 {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+
+
+}
+
+.section__housing p {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.tag__line {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FF6060;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.collapse__housing {
+    display: flex;
+    justify-content: space-between;
+    gap: 6%;
+}
+
+.host__box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.host__name {
+    color: #FF6060;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.host__pictureprofile {
+    width: 64px;
+    height: 64px;
+    background-color: #C4C4C4;
+    border-radius: 100%;
+}
