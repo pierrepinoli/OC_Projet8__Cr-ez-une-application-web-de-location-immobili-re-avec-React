@@ -1,11 +1,11 @@
-.notfound__body {
+.notfound__main {
     display: flex;
     flex-direction: column;
     gap: 139px;
     align-items: center;
 }
 
-.notfound__body h2 {
+.notfound__main h2 {
     height: 263px;
     color: #FF6060;
     text-align: center;
@@ -17,7 +17,7 @@
     /* 410.688px */
 }
 
-.notfound__body h3 {
+.notfound__main h3 {
     color: #FF6060;
     font-family: Montserrat;
     font-size: 36px;
@@ -27,7 +27,7 @@
     /* 51.336px */
 }
 
-.notfound__body p {
+.notfound__main p {
     color: #FF6060;
     font-family: Montserrat;
     font-size: 18px;

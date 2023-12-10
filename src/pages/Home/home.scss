@@ -1,4 +1,4 @@
-main {
+.main__home {
     padding-top: 50px;
     padding-left: 7%;
     padding-right: 7%;
@@ -6,4 +6,11 @@ main {
     flex-direction: column;
     gap: 43px;
     padding-bottom: 43px;
+}
+
+
+
+.banner__home {
+    display: flex;
+    flex-direction: column;
 }

@@ -10,12 +10,12 @@ const Collapse = ({ title, children }) => {
     };
   
     return (
-        <div className="collapse">
-      <div className="collapse-header" onClick={toggleCollapse}>
-        <span>{title}</span>
-        <span>{isCollapsed ? '▼' : '▲'}</span>
-      </div>
-      {!isCollapsed && <div className="collapse-content">{children}</div>}
+      <div className="collapse">
+        <div className="collapse-header" onClick={toggleCollapse}>
+          <span>{title}</span>
+          <span>{isCollapsed ? '▼' : '▲'}</span>
+        </div>
+        {!isCollapsed && <div className="collapse-content">{children}</div>}
     </div>
     );
   };

@@ -1,14 +1,15 @@
-import BannerAbout from "../../components/Banners/BannerAbout.jsx"
-import Collapse from "../../components/Collapse/Collapse.jsx"
+import Banner from "../../components/Banners/Banner.jsx";
+import Collapse from "../../components/Collapse/Collapse.jsx";
 import './about.scss';
 
+import bannerpicPath from '../../assets/images/mountains.png';
 
 function About() {
     return (
         <main>
-            <section>
-                <div><BannerAbout /></div>
-            </section>
+            
+            <Banner imageSrc={bannerpicPath} />
+            
             <section>
                 <div className="collapse__box">
                     <Collapse title="Fiabilité">

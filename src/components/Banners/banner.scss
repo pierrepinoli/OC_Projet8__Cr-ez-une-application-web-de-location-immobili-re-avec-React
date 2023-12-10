@@ -6,7 +6,15 @@
     position: relative;
     border-radius: 25px;
     overflow: hidden;
+
+    &.image--brightness {
+        img {
+            filter: brightness(0.8); // ajustez la valeur selon vos besoins
+        }
+    }
 }
+
+
 
 h1 {
     color: #FFF;
@@ -27,8 +35,4 @@ h1 {
     /* Pour maintenir le ratio hauteur/largeur de l'image */
     display: block;
 
-}
-
-.image--brigthness {
-    filter: brightness(0.8);
 }

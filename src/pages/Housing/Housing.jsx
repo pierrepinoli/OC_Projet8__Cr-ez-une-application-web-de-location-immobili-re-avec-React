@@ -4,9 +4,9 @@ import './housing.scss';
 function Housing () {
     return ( 
         <main>
-            <section>
+            
                 <div>carrousel</div>
-            </section>
+            
 
             <section className="section__housing">
                 
