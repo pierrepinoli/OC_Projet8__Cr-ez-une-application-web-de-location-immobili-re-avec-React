@@ -1,8 +1,5 @@
 .notfound__main {
-    display: flex;
-    flex-direction: column;
     gap: 139px;
-    align-items: center;
 }
 
 .notfound__main h2 {
@@ -14,7 +11,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 142.6%;
-    /* 410.688px */
+
 }
 
 .notfound__main h3 {
@@ -24,7 +21,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%;
-    /* 51.336px */
+
 }
 
 .notfound__main p {
@@ -34,6 +31,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%;
-    /* 25.668px */
+
     text-decoration-line: underline;
 }

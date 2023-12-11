@@ -1,3 +1,33 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    /* Ajustez selon vos besoins */
+    margin: auto;
+}
+
+.slide-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
 .section__housing {
     padding-top: 30px;
 }

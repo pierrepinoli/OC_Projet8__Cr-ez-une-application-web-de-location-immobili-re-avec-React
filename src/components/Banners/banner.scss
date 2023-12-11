@@ -14,8 +14,6 @@
     }
 }
 
-
-
 h1 {
     color: #FFF;
     font-family: Montserrat;
@@ -28,11 +26,8 @@ h1 {
 }
 
 .image--size {
-    position: absolute;
     width: 100%;
-    /* Assurez-vous que l'image prend la largeur totale de la div parente */
     height: auto;
-    /* Pour maintenir le ratio hauteur/largeur de l'image */
     display: block;
-
+    object-fit: cover;
 }

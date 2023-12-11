@@ -2,7 +2,7 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-
+    margin-top: 50px;
 }
 
 .footer__box {
@@ -10,6 +10,7 @@
     flex-direction: column;
     margin: 66px 33% 29px 33%;
     align-items: center;
+    gap: 28.56px;
 }
 
 .logo--color {

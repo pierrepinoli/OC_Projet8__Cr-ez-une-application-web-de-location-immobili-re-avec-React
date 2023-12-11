@@ -6,7 +6,7 @@ import bannerpicPath from '../../assets/images/mountains.png';
 
 function About() {
     return (
-        <main>
+        <main className="main__about">
             
             <Banner imageSrc={bannerpicPath} />
             
