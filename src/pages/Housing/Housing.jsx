@@ -2,7 +2,9 @@ import React from 'react';
 import { Navigate } from 'react-router-dom'; // Importez le composant Navigate
 import Collapse from '../../components/Collapse/Collapse.jsx';
 import Slideshow from '../../components/Slideshow/Slideshow.jsx';
+import StarRating from '../../components/StarRating/StarRating.jsx';
 import data from '../../assets/logements.json';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './housing.scss';
 
 import { useParams } from 'react-router-dom';
@@ -29,6 +31,7 @@ const Housing = () => {
         <div className="title__bar">
           <div className="title__box">
             <h2>{housingData.title}</h2>
+            <p>{housingData.location}</p>
           </div>
 
           <div className="host__box">
@@ -40,17 +43,20 @@ const Housing = () => {
             </div>
           </div>
         </div>
-        <p>{housingData.location}</p>
+        
+        <div className="tag__box">
+          <div className="tag__line">
+            {housingData.tags.map(tag => (
+              <div key={tag} className="tag">
+                {tag}
+              </div>
+            ))}
+          </div>
 
-        <div className="tag__line">
-          {housingData.tags.map(tag => (
-            <div key={tag} className="tag">
-              {tag}
-            </div>
-          ))}
+          <StarRating rating={housingData.rating} />
+
         </div>
-
-        <div>Rating: {housingData.rating}</div>
+        
         <div className="collapse__housing">
           <Collapse title="Description">
             <p>{housingData.description}</p>

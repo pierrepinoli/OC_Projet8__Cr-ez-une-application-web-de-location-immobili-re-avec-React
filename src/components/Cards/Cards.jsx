@@ -9,7 +9,7 @@ function Cards() {
       <div className="cards__grid">
         {data.map(item => (
           <div key={item.id} className="card">
-            {/* Utilisez le paramètre id dynamique dans le lien */}
+            {/* Mise en place du lien vers l'id correspond à la photo */}
             <NavLink to={`/Housing/${item.id}`}>
               <div className="card__image" style={{ backgroundImage: `url(${item.cover})` }}></div>
               <div className="card__title">{item.title}</div>
@@ -20,5 +20,6 @@ function Cards() {
     </div>
   );
 }
+
 
 export default Cards;
