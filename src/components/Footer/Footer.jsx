@@ -1,5 +1,7 @@
+// importations des fichiers annexes
 import logo from "../../assets/logo/logo-kasa-white.png"
 import './footer.scss';
+
 
 function Footer() {
     return (
@@ -14,4 +16,5 @@ function Footer() {
     )
 }
 
+//exportation du composant
 export default Footer;

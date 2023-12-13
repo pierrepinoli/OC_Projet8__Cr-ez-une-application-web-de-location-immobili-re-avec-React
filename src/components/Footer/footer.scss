@@ -11,24 +11,23 @@
     margin: 66px 33% 29px 33%;
     align-items: center;
     gap: 28.56px;
-}
+    min-width: 513px;
 
-.logo--color {
-    color: white;
-}
+    p {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+    }
 
-.logo--size {
-    width: 122px;
-    height: 39.444px;
-}
+    &.logo--color {
+        color: white;
+    }
 
-.footer p {
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
-    /* 34.224px */
+    &.logo--size {
+        width: 122px;
+        height: 39.444px;
+    }
 }

@@ -1,7 +1,11 @@
-import logo from "../../assets/logo/logo-kasa.png"
-import './header.scss';
-
+// importations des dependances
 import { NavLink } from "react-router-dom";
+
+// importations des fichiers annexes
+import logo from "../../assets/logo/logo-kasa.png";
+
+// importations du css
+import './header.scss';
 
 
 function Header() {
@@ -24,4 +28,5 @@ function Header() {
     );
 }
 
+//exportation du composant
 export default Header;

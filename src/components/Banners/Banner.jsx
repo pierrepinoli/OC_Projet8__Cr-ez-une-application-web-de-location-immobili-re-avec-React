@@ -1,5 +1,7 @@
+// importations du css //
 import './banner.scss';
 
+//utilisation d'une props pour importer les bannieres dans le composant parent //
 const Banner = (props) => {  
   return (
     <div className={`banner ${props.className}`}>
@@ -8,6 +10,7 @@ const Banner = (props) => {
   )
 }
 
+//exportation du composant
 export default Banner;
 
 

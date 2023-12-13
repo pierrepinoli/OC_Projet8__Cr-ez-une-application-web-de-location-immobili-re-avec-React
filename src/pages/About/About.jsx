@@ -1,8 +1,13 @@
+// importations des dependances
 import Banner from "../../components/Banners/Banner.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
+
+// importations des fichiers annexes
+import bannerpicPath from '../../assets/images/mountains.png';
+
+// importations du css
 import './about.scss';
 
-import bannerpicPath from '../../assets/images/mountains.png';
 
 function About() {
     return (
@@ -36,4 +41,5 @@ function About() {
     )
 }
 
+//exportation du composant
 export default About;

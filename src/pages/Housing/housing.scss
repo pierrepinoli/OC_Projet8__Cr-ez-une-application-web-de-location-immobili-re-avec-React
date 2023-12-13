@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-
 }
 
 .slideshow {
@@ -18,7 +17,6 @@
     display: flex;
     overflow: hidden;
 
-
     & img {
         object-fit: cover;
         border-radius: 25px;
@@ -29,11 +27,8 @@
     flex: 0 0 100%;
 }
 
-
 .active {
     transform: translateX(0);
-
-
 }
 
 .title__bar {
@@ -66,6 +61,7 @@
 .tag__box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     & .tag__line {
         display: flex;
@@ -92,7 +88,6 @@
     }
 }
 
-
 .collapse__housing {
     display: flex;
     justify-content: space-between;
@@ -104,8 +99,6 @@
         }
     }
 }
-
-
 
 .host__box {
     display: flex;

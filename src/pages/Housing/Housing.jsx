@@ -1,14 +1,18 @@
+
+// importations des dependances
 import React from 'react';
-import { Navigate } from 'react-router-dom'; // Importez le composant Navigate
+import { Navigate , useParams } from 'react-router-dom';
+
 import Collapse from '../../components/Collapse/Collapse.jsx';
 import Slideshow from '../../components/Slideshow/Slideshow.jsx';
 import StarRating from '../../components/StarRating/StarRating.jsx';
-import data from '../../assets/logements.json';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
+// importations des fichiers annexes
+import data from '../../assets/logements.json';
+
+// importations du css
 import './housing.scss';
-
-import { useParams } from 'react-router-dom';
-
 
 
 const Housing = () => {
@@ -17,7 +21,7 @@ const Housing = () => {
   // Utilisez l'ID pour obtenir les données spécifiques de votre fichier JSON
   const housingData = data.find(item => item.id === id);
   console.log("Pictures:", housingData.pictures);
-  // Si le logement n'est pas trouvé, redirigez vers la page 404
+  // Si le logement n'est pas trouvé, redirige vers la page 404
   if (!housingData) {
     return <Navigate to="/404" />;
   }
@@ -25,6 +29,7 @@ const Housing = () => {
   return (
     <main className='main__housing'>
 
+    {/* importation du composant slideshow */}
       <Slideshow pictures={housingData.pictures} />
 
       <section className="section__housing">
@@ -53,19 +58,19 @@ const Housing = () => {
             ))}
           </div>
 
+    {/* importation du composant enfant starrating */}
           <StarRating rating={housingData.rating} />
 
         </div>
         
+        {/* double importation du composant enfant collapse */}
         <div className="collapse__housing">
           <Collapse title="Description">
             <p>{housingData.description}</p>
           </Collapse>
           <Collapse title="Équipements">
             <ul>
-              {housingData.equipments.map(equipment => (
-                <li key={equipment}>{equipment}</li>
-              ))}
+              {housingData.equipments.map(equipment => (<li key={equipment}>{equipment}</li>))}
             </ul>
           </Collapse>
         </div>
@@ -74,4 +79,5 @@ const Housing = () => {
   );
 };
 
+//exportation du composant
 export default Housing;

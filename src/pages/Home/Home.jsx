@@ -1,8 +1,13 @@
-import Banner from "../../components/Banners/Banner.jsx"
-import Cards from "../../components/Cards/Cards.jsx"
+// importations des dependances
+import Banner from "../../components/Banners/Banner.jsx";
+import Cards from "../../components/Cards/Cards.jsx";
+
+// importations des fichiers annexes
+import bannerpicPath from "../../assets/images/cliffs.png";
+
+// importations du css
 import './home.scss';
 
-import bannerpicPath from "../../assets/images/cliffs.png"
 
 function Home () {
     return ( 
@@ -18,4 +23,5 @@ function Home () {
     )
 };
 
+//exportation du composant
 export default Home;

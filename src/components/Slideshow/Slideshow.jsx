@@ -1,3 +1,6 @@
+// importations des fichiers annexes
+// importations du css
+// importations des dependances
 import React, { useState  } from 'react';
 import ArrowLeft from "../../assets/logo/chevron-left-solid.svg";
 import ArrowRight from "../../assets/logo/chevron-right-solid.svg";
@@ -48,6 +51,6 @@ const Slideshow = ({ pictures }) => {
   );
 };
 
-
+//exportation du composant
 export default Slideshow;
 

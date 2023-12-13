@@ -1,5 +1,9 @@
-import './notfound.scss';
+// importations des dependances
 import { NavLink } from "react-router-dom";
+
+// importations du css
+import './notfound.scss';
+
 
 function Notfound () {
     return ( 
@@ -11,4 +15,5 @@ function Notfound () {
     )
 }
 
+//exportation du composant
 export default Notfound;

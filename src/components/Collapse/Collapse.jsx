@@ -1,6 +1,7 @@
 // importation des dependances
-
 import React, { useState } from 'react';
+
+// importation des icones de Fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 

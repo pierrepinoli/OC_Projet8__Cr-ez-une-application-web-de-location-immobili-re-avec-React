@@ -1,11 +1,12 @@
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-
-import '@fortawesome/fontawesome-free/css/all.min.css';
-
+// importations des dependances
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// importation des icones de Fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const StarRating = ({ rating }) => {
   // Assurez-vous que la note est comprise entre 1 et 5
@@ -17,6 +18,7 @@ const StarRating = ({ rating }) => {
   return (
     <div className="starrating__box">
       {stars.map((isFilled, index) => (
+        // importation des icones de Fontawesome
         <FontAwesomeIcon
           key={index}
           icon={faStar}
@@ -35,4 +37,5 @@ StarRating.propTypes = {
   rating: PropTypes.number.isRequired,
 };
 
+//exportation du composant
 export default StarRating;

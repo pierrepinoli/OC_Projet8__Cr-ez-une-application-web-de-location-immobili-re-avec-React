@@ -4,7 +4,6 @@ header {
     margin-bottom: 50px;
 }
 
-
 .logo--size {
     width: 210.322px;
     height: 68px;
@@ -32,11 +31,11 @@ header {
     flex-direction: row;
     gap: 57px;
 
-    & li {
+    li {
         /* Supprime les points des <li> */
         list-style: none;
 
-        & a {
+        a {
             margin: 0;
             padding: 10px;
             color: #FF6060;
@@ -45,7 +44,7 @@ header {
         }
 
         // pointeur au survol
-        & a:hover {
+        a:hover {
             cursor: pointer;
             text-decoration: underline;
         }
