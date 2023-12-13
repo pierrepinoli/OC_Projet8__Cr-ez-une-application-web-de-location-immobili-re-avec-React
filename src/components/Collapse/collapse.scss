@@ -2,14 +2,13 @@
     width: 100%;
     margin-bottom: 10px;
     border-radius: 5px;
-
 }
 
 .collapse-header {
-    padding: 10px;
-    cursor: pointer;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #FF6060;
     color: white;
     user-select: none;
@@ -25,6 +24,7 @@
 }
 
 .collapse-content {
+
     padding: 10px;
     border-radius: 5px;
     background-color: #F6F6F6;
@@ -35,4 +35,40 @@
     font-style: normal;
     font-weight: 400;
     line-height: 142.6%;
+
+
+}
+
+.chevron__icon {
+    width: 32px;
+    height: 32px;
+}
+
+.chevron__icon:hover {
+    cursor: pointer;
+}
+
+// ************** ANIMATIONS ****************//
+
+// animations des chevrons 
+// Ajout d'une transition pour l'effet d'animation 
+.chevron__icon.rotate {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+// Rotation à 180 degrés pour le chevron vers le bas 
+.chevron__icon.rotate {
+    transform: rotate(-180deg);
+}
+
+// animations des collapses
+.collapse-content.expand {
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 5s ease-in-out;
+}
+
+.collapse-content.expand {
+    opacity: 100%;
 }

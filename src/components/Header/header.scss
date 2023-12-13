@@ -4,17 +4,16 @@ header {
     margin-bottom: 50px;
 }
 
+
+.logo--size {
+    width: 210.322px;
+    height: 68px;
+}
+
 .navbar__box {
     padding-top: 45px;
     display: flex;
     justify-content: space-between;
-}
-
-.navbar__box ul {
-    display: flex;
-    flex-direction: row;
-    gap: 57px;
-
 }
 
 .navbar__box--typography {
@@ -28,32 +27,34 @@ header {
     /* 34.224px */
 }
 
-.navbar__links {
-    text-decoration: none;
-    padding: 10px;
-    color: #333;
-    transition: background-color 0.3s ease;
-}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
 
-/* Styles pour le NavLink actif */
-.navbar__links.active {
-    background-color: #3498db;
-    color: #fff;
-}
+    & li {
+        /* Supprime les points des <li> */
+        list-style: none;
 
-/* Styles pour le NavLink en cours de traitement */
-.navbar__links.pending {
-    background-color: #f39c12;
-    color: #fff;
-}
+        & a {
+            margin: 0;
+            padding: 10px;
+            color: #FF6060;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
 
-/* Styles pour le NavLink en cours de transition */
-.navbar__links.transitioning {
-    background-color: #ecf0f1;
-    color: #333;
-}
+        // pointeur au survol
+        & a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
 
-.logo--size {
-    width: 210.322px;
-    height: 68px;
+        // soulignement du lien en cours
+        a.active {
+            text-decoration: underline;
+        }
+
+    }
+
 }

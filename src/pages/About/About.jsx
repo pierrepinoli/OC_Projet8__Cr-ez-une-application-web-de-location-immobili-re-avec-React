@@ -13,7 +13,7 @@ function About() {
             <section>
                 <div className="collapse__box">
                     <Collapse title="Fiabilité">
-                        <p>Les annonaces postées sur Kasa garantissent une fiabilité totale. 
+                        <p>Les annonces postées sur Kasa garantissent une fiabilité totale. 
                         Les photos sont conformes aux logements et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
                     </Collapse>
                     <Collapse title="Respect">

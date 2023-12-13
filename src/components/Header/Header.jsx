@@ -3,22 +3,25 @@ import './header.scss';
 
 import { NavLink } from "react-router-dom";
 
+
 function Header() {
     return (
         <header>
-            <nav className="navbar__box navbar__box--typography">
+            <div className="navbar__box navbar__box--typography">
                 <img className="logo--size" src={logo} alt="Logo Kasa" />
-                <ul>
-                    <li className="navbar__links"><NavLink to="/" className={({ isActive, isPending, isTransitioning }) =>
-                        [isPending ? "pending" : "", isActive ? "active" : "", isTransitioning ? "transitioning" : "", ].join(" ")
-                        }>Accueil</NavLink></li>
-                    <li className="navbar__links"><NavLink to="/About" className={({ isActive, isPending, isTransitioning }) =>
-                        [isPending ? "pending" : "", isActive ? "active" : "", isTransitioning ? "transitioning" : "", ].join(" ")
-                        }>A Propos</NavLink></li>
-                </ul>
-            </nav>
+                <nav className="navbar">
+                    <ul>
+                        <li>
+                            <NavLink exact to="/" className={({isActive}) => (isActive ? "active" : "")}>Accueil</NavLink>
+                        </li>
+                        <li>
+                            <NavLink exact to="/About" className={({isActive}) => (isActive ? "active" : "")}>A Propos</NavLink>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-    )
+    );
 }
 
 export default Header;
