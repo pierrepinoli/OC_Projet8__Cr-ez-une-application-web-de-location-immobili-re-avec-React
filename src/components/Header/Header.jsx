@@ -16,10 +16,10 @@ function Header() {
                 <nav className="navbar">
                     <ul>
                         <li>
-                            <NavLink exact to="/" className={({isActive}) => (isActive ? "active" : "")}>Accueil</NavLink>
+                            <NavLink to="/" className={({isActive}) => (isActive ? "active" : "")}>Accueil</NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/About" className={({isActive}) => (isActive ? "active" : "")}>A Propos</NavLink>
+                            <NavLink to="/About" className={({isActive}) => (isActive ? "active" : "")}>A Propos</NavLink>
                         </li>
                     </ul>
                 </nav>

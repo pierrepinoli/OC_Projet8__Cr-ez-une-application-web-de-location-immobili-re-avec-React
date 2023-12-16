@@ -9,10 +9,10 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const StarRating = ({ rating }) => {
-  // Assurez-vous que la note est comprise entre 1 et 5
+  // verifie si la note est comprise entre 1 et 5
   const clampedRating = Math.min(5, Math.max(1, rating));
 
-  // Crée un tableau de 5 étoiles avec des étoiles remplies ou vides en fonction de la note
+  // Création d'un tableau de 5 étoiles avec des étoiles remplies ou vides en fonction de la note
   const stars = Array.from({ length: 5 }, (_, index) => index < clampedRating);
 
   return (
