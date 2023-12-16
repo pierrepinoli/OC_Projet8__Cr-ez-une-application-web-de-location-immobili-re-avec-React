@@ -1,56 +1,56 @@
-// importations des fichiers annexes
-// importations du css
 // importations des dependances
 import React, { useState  } from 'react';
+
+// importations des fichiers annexes (logos des fleches)
 import ArrowLeft from "../../assets/logo/chevron-left-solid.svg";
 import ArrowRight from "../../assets/logo/chevron-right-solid.svg";
 
 const Slideshow = ({ pictures }) => {
+  // initialisation de l'état local "currentSlide" à 0 avec l'aide du hook "useState"
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const nextSlide = () => {
-    
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % pictures.length);
-  };
-
+  // affiche le slide précédent au clic sur l'icone gauche
   const prevSlide = () => {
     
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + pictures.length) % pictures.length);
+    setCurrentSlide(
+      // si currentSlide = 0 alors on affiche la derniere image 
+      //sinon currentSlide - 1 pour afficher l'image précédente.
+      currentSlide === 0 ? pictures.length - 1 : currentSlide - 1
+      );
   };
 
-  // const prevSlide = () => {
-    
-  //   setCurrentSlide(
-  //     currentSlide === 0 ? pictures.length - 1 : currentSlide - 1
-  //     );
-  // };
 
-  // const nextSlide = () => {
-
-  //   setCurrentSlide(
-  //     currentSlide === pictures.length - 1 ? 0 : currentSlide + 1
-  //     );
-  // };
-
-  
+  // affiche le slide suivant au clic sur l'icone droite
+  const nextSlide = () => {
+    setCurrentSlide(
+      currentSlide === pictures.length - 1 ? 0 : currentSlide + 1
+      );
+  };
 
   return (
     <div className="slideshow">
+      {/* affiche seulement s'il y a plusieurs images*/}
+      {pictures.length > 1 && (
+        
+      <div className="arrow__box">
+        {/* creation des fleches avec une mise en place d'un event listener grace à "onClick" */}
+        {/* importation locale des icones de fontawesome */}
+       
+          <img className="arrow arrow__left" src={ArrowLeft} alt="Flèche gauche" onClick={prevSlide} />
   
-      <img className="arrow arrow__left" src={ArrowLeft} alt="Flèche gauche" onClick={prevSlide}/>
+          <img className="arrow arrow__right"  src={ArrowRight} alt="Flèche droite" onClick={nextSlide} />
      
-
-      <div className="slide-container">
-      {pictures.map((url, index) => (
-         <img key={index} src={url} alt={`Slide ${index + 1}`} className={`slide ${index === currentSlide ? 'active' : ''}`} />
-                ))}
       </div>
-      <img className="arrow arrow__right" src={ArrowRight} alt="Flèche droite" onClick={nextSlide}/>
-   
+    )}
+ 
+      {/* affichage des images du slideshow en fonction de la valeur du currentSlide */}
+      <img className="slideshow__img" src={pictures[currentSlide]} alt={`Slide numéro ${currentSlide + 1}`} />
+
+      
     </div>
   );
+
 };
 
-//exportation du composant
 export default Slideshow;
 
