@@ -4,10 +4,6 @@ import { NavLink } from "react-router-dom";
 // importations des fichiers annexes
 import data from '../../assets/logements.json';
 
-// importations du css
-import './cards.scss';
-
-
 // utilisation de props pour permettre de remplir les cartes avec les données du fichier JSON dans le composant parent
 function Cards() {
   return (

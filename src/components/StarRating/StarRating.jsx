@@ -21,11 +21,8 @@ const StarRating = ({ rating }) => {
         <FontAwesomeIcon
           key={index}
           icon={faStar}
-          style={{
-            width: '30px',
-            height: '30px',
-            color: isFilled ? '#FF6060' : '#E3E3E3',
-         }}
+          className={isFilled ? 'filled-star' : 'empty-star'}
+         
         />
       ))}
     </div>

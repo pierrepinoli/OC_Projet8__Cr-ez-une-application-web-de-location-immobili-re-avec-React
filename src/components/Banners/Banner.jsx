@@ -1,5 +1,3 @@
-// importations du css //
-import './banner.scss';
 
 //utilisation d'une props pour importer les bannieres dans le composant parent //
 const Banner = (props) => {  

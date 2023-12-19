@@ -1,36 +1,28 @@
 .notfound__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 139px;
 }
 
-.notfound__main h2 {
-    height: 263px;
+.notfound__main h1 {
     color: #FF6060;
-    text-align: center;
-    font-family: Montserrat;
     font-size: 288px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 142.6%;
-
+    position: inherit;
 }
 
-.notfound__main h3 {
-    color: #FF6060;
-    font-family: Montserrat;
+.notfound__main h2 {
     font-size: 36px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 142.6%;
+    text-align: center;
 
 }
 
-.notfound__main p {
-    color: #FF6060;
+.link__notfound {
     font-family: Montserrat;
+    color: #FF6060;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 142.6%;
-
     text-decoration-line: underline;
 }

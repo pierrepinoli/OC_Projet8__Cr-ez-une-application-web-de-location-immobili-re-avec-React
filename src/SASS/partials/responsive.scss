@@ -1,0 +1,327 @@
+/*************************** Styles pour petits écrans *************************/
+
+@media screen and (max-width: 1024px) {
+
+    //passage à 2 colonnes 
+    .cards__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner {
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+
+
+    // partie housing //
+
+    .section__housing {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & p {
+            color: #FF6060;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+
+    .host__container {
+        display: flex;
+        gap: 10px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+
+/*************************************** Styles pour tablettes ********************************/
+@media screen and (max-width: 768px) {
+
+    //passage à 2 colonnes 
+    .cards__grid {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: initial;
+        padding: 0;
+    }
+
+    .banner {
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .header__logo--size {
+        width: 145px;
+        height: 46.881px;
+    }
+
+    .navbar ul {
+        gap: 38px;
+    }
+
+    .navbar__box--typography {
+        font-size: 18px;
+
+    }
+
+    .title__box h2 {
+        font-size: 24px;
+    }
+
+    .section__housing {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & p {
+            font-size: 16px;
+        }
+    }
+
+    .tag__box .tag__line .tag {
+        font-size: 12px;
+    }
+
+    .chevron__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .collapse__box {
+        padding-left: 0;
+        padding-right: 0;
+        gap: 20px;
+    }
+
+    .collapse__housing {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .collapse .collapse__header {
+        font-size: 16px;
+    }
+
+    .collapse__txt {
+        font-size: 14px;
+    }
+
+    .host__name p {
+        font-size: 14px;
+    }
+
+    .host__pictureprofile {
+        width: 48px;
+        height: 48px;
+
+    }
+
+    .arrow__box .arrow {
+        width: 36px;
+        height: 36px;
+    }
+
+    .starrating__box {
+        display: flex;
+        gap: 8px;
+    }
+
+    .filled-star {
+        width: 24px;
+        height: 24px;
+        color: #FF6060;
+    }
+
+    .empty-star {
+        width: 24px;
+        height: 24px;
+        color: #E3E3E3;
+    }
+
+    // page 404
+
+    .notfound__main {
+        gap: 126px;
+    }
+
+    .notfound__main h1 {
+        font-size: 128px;
+    }
+
+    .notfound__main h2 {
+        font-size: 24px;
+    }
+}
+
+/********************************* Styles pour smartphones **************************************/
+@media screen and (max-width: 480px) {
+
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+
+    // partie header //
+    .header {
+        margin-bottom: 27px;
+    }
+
+    .header__logo--size {
+        width: 145px;
+        height: 46.881px;
+    }
+
+    .navbar ul {
+        gap: 26px;
+    }
+
+    .navbar__box--typography {
+        font-size: 12px;
+    }
+
+    //partie page d'acceuil
+
+    //passage à 1 colonne
+    .cards__grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 22px;
+    }
+
+    .banner {
+        height: 111px;
+    }
+
+    h1 {
+        font-size: 24px;
+        overflow: initial;
+    }
+
+    // partie footer
+    .footer {
+        margin-top: 27px;
+    }
+
+    .footer__box {
+        width: 134px;
+        gap: 0px;
+    }
+
+    .footer__box p {
+        font-size: 12px;
+    }
+
+
+
+    // partie housing //
+
+    .title__box h2 {
+        font-size: 18px;
+    }
+
+    .tag__box .tag__line .tag {
+        font-size: 10px;
+    }
+
+    .arrow__box .arrow {
+        width: 24px;
+        height: 24px;
+    }
+
+    .chevron__icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .collapse__housing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .collapse .collapse__header {
+        font-size: 13px;
+    }
+
+    .collapse__txt {
+        font-size: 12px;
+    }
+
+    .section__housing {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & p {
+            font-size: 14px;
+        }
+    }
+
+    .slideshow {
+        height: 225px;
+    }
+
+
+
+    .host__container {
+        display: flex;
+        gap: 10px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .host__name p {
+        font-size: 12px;
+    }
+
+    .host__pictureprofile {
+        width: 32px;
+        height: 32px;
+    }
+
+    .starrating__box {
+        display: flex;
+        gap: 7px;
+    }
+
+    .filled-star {
+        width: 18px;
+        height: 18px;
+        color: #FF6060;
+    }
+
+    .empty-star {
+        width: 18px;
+        height: 18px;
+        color: #E3E3E3;
+    }
+
+    // page 404 
+
+    .notfound__main {
+        gap: 113px;
+    }
+
+    .notfound__main h1 {
+        font-size: 96px;
+    }
+
+    .notfound__main h2 {
+        font-size: 18px;
+    }
+}

@@ -10,9 +10,6 @@ import StarRating from '../../components/StarRating/StarRating.jsx';
 // importations des fichiers annexes
 import data from '../../assets/logements.json';
 
-// importations du css
-import './housing.scss';
-
 
 const Housing = () => {
   const { id } = useParams();
@@ -32,47 +29,49 @@ const Housing = () => {
       <Slideshow pictures={housingData.pictures} />
 
       <section className="section__housing">
-        <div className="title__bar">
-          <div className="title__box">
-            <h2>{housingData.title}</h2>
-            <p>{housingData.location}</p>
+        
+        {/* div conteant : le titre, le sous-titre et les tags */}
+        <div className="title__box">
+          <h2>{housingData.title}</h2>
+          <p>{housingData.location}</p>
+          <div className="tag__box">
+            
+            <div className="tag__line">
+              {housingData.tags.map(tag => (<div key={tag} className="tag">{tag}</div>))}
+            </div> 
           </div>
+        </div>
 
-          <div className="host__box">
+        {/* div contenant : la photo de profil, le nom et la notation */}
+        <div className="host__container">
+          <div className="host__bar">
             <div className="host__name">
               <p>{housingData.host.name}</p>
             </div>
             <div className="host__pictureprofile">
               <img src={housingData.host.picture} alt={housingData.host.name} />
             </div>
-          </div>
+            </div>
+            {/* importation du composant enfant starrating */}
+            <StarRating rating={housingData.rating} />
         </div>
-        
-        <div className="tag__box">
-          <div className="tag__line">
-            {housingData.tags.map(tag => (
-              <div key={tag} className="tag">
-                {tag}
-              </div>
-            ))}
-          </div>
 
-    {/* importation du composant enfant starrating */}
-          <StarRating rating={housingData.rating} />
+      </section>
 
-        </div>
+      {/* double importation du composant enfant collapse */}
+      <section className="collapse__housing">
+
+        <Collapse 
+          title="Description" 
+          content={<p>{housingData.description}</p>}>
+        </Collapse>
+
+        <Collapse 
+          title="Équipements" 
+          content={<ul>{housingData.equipments.map(equipment => (<li key={equipment}>{equipment}</li>))}</ul>}>
+        </Collapse>
+
         
-        {/* double importation du composant enfant collapse */}
-        <div className="collapse__housing">
-          <Collapse title="Description">
-            <p>{housingData.description}</p>
-          </Collapse>
-          <Collapse title="Équipements">
-            <ul>
-              {housingData.equipments.map(equipment => (<li key={equipment}>{equipment}</li>))}
-            </ul>
-          </Collapse>
-        </div>
       </section>
     </main>
   );

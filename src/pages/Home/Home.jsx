@@ -5,10 +5,6 @@ import Cards from "../../components/Cards/Cards.jsx";
 // importations des fichiers annexes
 import bannerpicPath from "../../assets/images/cliffs.png";
 
-// importations du css
-import './home.scss';
-
-
 function Home () {
     return ( 
         <main className="main__home">

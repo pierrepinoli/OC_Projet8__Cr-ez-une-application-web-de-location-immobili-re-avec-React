@@ -5,38 +5,38 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-//importation du css
-import './collapse.scss';
-
-
 // definition du composant 
-const Collapse = ({ title, children }) => {
+const Collapse = ({ title, content }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
   };
 
-  // etablissement du DOM
+  // établissement du DOM
   return (
     <div className="collapse">
-      <div className="collapse-header" >
+      <div className="collapse__header">
         <span>{title}</span>
         <span>
-
-          {/* appel des icones de fontawesome */}
-          <FontAwesomeIcon onClick={toggleCollapse} icon={isCollapsed ? faChevronUp : faChevronUp} 
-          
-          // definiton des classes css//
-                           className={`chevron__icon ${isCollapsed ? '' : 'rotate'}`}  />
+          {/* appel des icônes de Fontawesome */}
+          <FontAwesomeIcon
+            onClick={toggleCollapse}
+            icon={faChevronUp}
+            // définition des classes CSS
+            className={`chevron__icon ${isCollapsed ? 'chevron__rotate--close' : 'chevron__rotate--open'}` }
+          />
         </span>
-      </div>
-
-      {!isCollapsed && <div className={`collapse-content ${isCollapsed ? '' : 'expand'}`}>{children}</div>}
+      </div>  
+      <div className={`collapse__content ${isCollapsed ? '.collapse__content--reduce' : '.collapse__content--expand'}`}>
       
-    </div>
+        <div className={`collapse__txt ${isCollapsed ? '.collapse__txt--reduce' : '.collapse__txt--expand'}`}>{content}</div>
+      
+      </div>
+    </div>  
   );
 };
+
 
 // exportation du composant
 export default Collapse;

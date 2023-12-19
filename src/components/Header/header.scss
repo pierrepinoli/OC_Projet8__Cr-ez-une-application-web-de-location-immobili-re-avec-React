@@ -4,7 +4,7 @@ header {
     margin-bottom: 50px;
 }
 
-.logo--size {
+.header__logo--size {
     width: 210.322px;
     height: 68px;
 }
@@ -23,8 +23,6 @@ header {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%;
-    /* 34.224px */
 }
 
 .navbar ul {
@@ -38,7 +36,6 @@ header {
 
         a {
             margin: 0;
-            padding: 10px;
             color: #FF6060;
             text-decoration: none;
             transition: background-color 0.3s ease;
