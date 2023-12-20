@@ -2,20 +2,21 @@
 
 @media screen and (max-width: 1024px) {
 
-    //passage à 2 colonnes 
-    .cards__grid {
-        grid-template-columns: repeat(2, 1fr);
+    // *********** partie générale *********** //
+    h1 {
+        font-size: 36px;
     }
+
+    // *********** partie page d'acceuil *********** //
 
     .banner {
         height: 180px;
     }
 
-    h1 {
-        font-size: 36px;
+    //passage à 2 colonnes 
+    .cards__grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-
-
 
     // partie housing //
 
@@ -41,9 +42,19 @@
     }
 }
 
-
 /*************************************** Styles pour tablettes ********************************/
 @media screen and (max-width: 768px) {
+
+    // *********** partie générale *********** //
+    h1 {
+        font-size: 30px;
+    }
+
+    // *********** partie page d'acceuil *********** //
+
+    .banner {
+        height: 180px;
+    }
 
     //passage à 2 colonnes 
     .cards__grid {
@@ -52,13 +63,7 @@
         padding: 0;
     }
 
-    .banner {
-        height: 180px;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
+    // *********** partie header *********** //
 
     .header__logo--size {
         width: 145px;
@@ -71,9 +76,9 @@
 
     .navbar__box--typography {
         font-size: 18px;
-
     }
 
+    // ************** partie housing **************** //
     .title__box h2 {
         font-size: 24px;
     }
@@ -86,6 +91,10 @@
         & p {
             font-size: 16px;
         }
+    }
+
+    .slideshow {
+        height: 330px;
     }
 
     .tag__box .tag__line .tag {
@@ -123,12 +132,14 @@
     .host__pictureprofile {
         width: 48px;
         height: 48px;
-
     }
 
-    .arrow__box .arrow {
-        width: 36px;
-        height: 36px;
+    .arrow__box {
+
+        & .arrow {
+            width: 36px;
+            height: 36px;
+        }
     }
 
     .starrating__box {
@@ -148,7 +159,7 @@
         color: #E3E3E3;
     }
 
-    // page 404
+    // *********** page 404 *********** //
 
     .notfound__main {
         gap: 126px;
@@ -166,6 +177,7 @@
 /********************************* Styles pour smartphones **************************************/
 @media screen and (max-width: 480px) {
 
+    // *********** partie générale *********** //
     main {
         padding-left: 5%;
         padding-right: 5%;
@@ -173,12 +185,14 @@
 
     h1 {
         font-size: 24px;
+        overflow: initial;
     }
 
-
-    // partie header //
+    // *********** partie header *********** //
     .header {
         margin-bottom: 27px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .header__logo--size {
@@ -190,28 +204,16 @@
         gap: 26px;
     }
 
+    .navbar__box {
+        padding-top: 20px;
+    }
+
     .navbar__box--typography {
         font-size: 12px;
+        text-transform: uppercase;
     }
 
-    //partie page d'acceuil
-
-    //passage à 1 colonne
-    .cards__grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 22px;
-    }
-
-    .banner {
-        height: 111px;
-    }
-
-    h1 {
-        font-size: 24px;
-        overflow: initial;
-    }
-
-    // partie footer
+    // ************ partie footer ************* //
     .footer {
         margin-top: 27px;
     }
@@ -219,15 +221,36 @@
     .footer__box {
         width: 134px;
         gap: 0px;
+
+        p {
+            font-size: 12px;
+        }
     }
 
-    .footer__box p {
-        font-size: 12px;
+    // *********** partie page d'acceuil *********** //
+
+    .banner {
+        height: 111px;
     }
 
 
+    .main__home {
+        gap: 22px;
+        padding-bottom: 5px;
+    }
 
-    // partie housing //
+    //passage à 1 colonne
+    .cards__grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 22px;
+    }
+
+    .card {
+        height: 255px;
+    }
+
+
+    // ********** partie housing *********** //
 
     .title__box h2 {
         font-size: 18px;
@@ -276,8 +299,6 @@
         height: 225px;
     }
 
-
-
     .host__container {
         display: flex;
         gap: 10px;
@@ -311,7 +332,7 @@
         color: #E3E3E3;
     }
 
-    // page 404 
+    // *********** page 404 *********** //
 
     .notfound__main {
         gap: 113px;
