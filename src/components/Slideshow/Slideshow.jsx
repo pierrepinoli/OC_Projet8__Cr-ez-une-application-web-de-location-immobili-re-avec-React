@@ -2,8 +2,7 @@
 import React, { useState  } from 'react';
 
 // importations des fichiers annexes (logos des fleches)
-import ArrowLeft from "../../assets/logo/chevron-left-solid.svg";
-import ArrowRight from "../../assets/logo/chevron-right-solid.svg";
+import Arrow from "../../assets/logo/arrow.svg";
 
 const Slideshow = ({ pictures }) => {
   // initialisation de l'état local "currentSlide" à 0 avec l'aide du hook "useState"
@@ -36,9 +35,9 @@ const Slideshow = ({ pictures }) => {
         {/* creation des fleches avec une mise en place d'un event listener grace à "onClick" */}
         {/* importation locale des icones de fontawesome */}
        
-          <img className="arrow arrow__left" src={ArrowLeft} alt="Flèche gauche" onClick={prevSlide} />
+          <img className="arrow arrow__left" src={Arrow} alt="Flèche gauche" onClick={prevSlide} />
   
-          <img className="arrow arrow__right"  src={ArrowRight} alt="Flèche droite" onClick={nextSlide} />
+          <img className="arrow arrow__right"  src={Arrow} alt="Flèche droite" onClick={nextSlide} />
      
       </div>
     )}

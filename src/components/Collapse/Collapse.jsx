@@ -15,7 +15,8 @@ const Collapse = ({ title, content }) => {
 
   // établissement du DOM
   return (
-    <div className="collapse">
+    <div className="collapse__container">
+    
       <div className="collapse__header">
         <span>{title}</span>
         <span>
@@ -28,9 +29,9 @@ const Collapse = ({ title, content }) => {
           />
         </span>
       </div>  
-      <div className={`collapse__content ${isCollapsed ? '.collapse__content--reduce' : '.collapse__content--expand'}`}>
+      <div className={`collapse__content ${isCollapsed ? 'collapse__content--reduce' : 'collapse__content--expand'}`}>
       
-        <div className={`collapse__txt ${isCollapsed ? '.collapse__txt--reduce' : '.collapse__txt--expand'}`}>{content}</div>
+        <div className={`collapse__txt ${isCollapsed ? 'collapse__txt--reduce' : 'collapse__txt--expand'}`}>{content}</div>
       
       </div>
     </div>  
