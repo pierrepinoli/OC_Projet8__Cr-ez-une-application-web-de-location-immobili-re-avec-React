@@ -41,10 +41,6 @@
     }
 
     .section__housing {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-
         & p {
             font-size: 16px;
         }
@@ -245,8 +241,11 @@
         gap: 20px;
     }
 
-    .collapse .collapse__header {
-        font-size: 13px;
+    .collapse__container {
+
+        & .collapse__header {
+            font-size: 13px;
+        }
     }
 
     .collapse__txt {
