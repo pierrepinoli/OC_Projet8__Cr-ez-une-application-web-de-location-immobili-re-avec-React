@@ -45,6 +45,12 @@ const Slideshow = ({ pictures }) => {
       {/* affichage des images du slideshow en fonction de la valeur du currentSlide */}
       <img className="slideshow__img" src={pictures[currentSlide]} alt={`Slide numéro ${currentSlide + 1}`} />
 
+      {/* affichage du compteur d'image en bas du carrousel */}
+      <div className="slideshow__counter">
+        <p>
+          {pictures.length > 1 ? `${currentSlide + 1 }/${pictures.length}` : ""}
+        </p>
+      </div>
       
     </div>
   );

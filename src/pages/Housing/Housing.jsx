@@ -19,7 +19,7 @@ const Housing = () => {
   console.log("Pictures:", housingData.pictures);
   // Si le logement n'est pas trouvé, redirige vers la page 404
   if (!housingData) {
-    return <Navigate to="/404" />;
+    return <Navigate to="*" />;
   }
 
   return (

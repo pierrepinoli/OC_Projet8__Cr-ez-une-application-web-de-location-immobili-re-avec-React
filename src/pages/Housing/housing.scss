@@ -36,7 +36,6 @@
         top: 40%;
         transform: rotate(180deg);
     }
-
 }
 
 .slideshow__img {
@@ -44,6 +43,17 @@
     height: 100%;
     object-fit: cover;
     border-radius: 25px;
+}
+
+.slideshow__counter {
+    position: absolute;
+    right: 50%;
+
+    bottom: 5%;
+
+    p {
+        color: #FFF;
+    }
 }
 
 // ************ partie description ************ //

@@ -10,7 +10,9 @@ function Home () {
         <main className="main__home">
             <div className="banner__home">
                 <Banner className="image--brightness" imageSrc={bannerpicPath} />
-                <h1>Chez vous, partout et ailleurs</h1>
+                <h1>Chez vous, <br className="mobile-break"/> partout et ailleurs</h1>
+
+                
             </div>
             <section>
                <Cards />

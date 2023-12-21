@@ -1,49 +1,6 @@
-/*************************** Styles pour petits écrans *************************/
-
-@media screen and (max-width: 1024px) {
-
-    // *********** partie générale *********** //
-    h1 {
-        font-size: 36px;
-    }
-
-    // *********** partie page d'acceuil *********** //
-
-    .banner {
-        height: 180px;
-    }
-
-    //passage à 2 colonnes 
-    .cards__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    // partie housing //
-
-    .section__housing {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-
-        & p {
-            color: #FF6060;
-            font-family: Montserrat;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-        }
-    }
-
-    .host__container {
-        display: flex;
-        gap: 10px;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-}
-
 /*************************************** Styles pour tablettes ********************************/
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1023px) {
 
     // *********** partie générale *********** //
     h1 {
@@ -175,7 +132,7 @@
 }
 
 /********************************* Styles pour smartphones **************************************/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
 
     // *********** partie générale *********** //
     main {
@@ -195,13 +152,10 @@
         padding-right: 5%;
     }
 
-    .header__logo--size {
-        width: 145px;
-        height: 46.881px;
-    }
 
     .navbar ul {
         gap: 26px;
+        padding-left: 0;
     }
 
     .navbar__box {
@@ -221,18 +175,31 @@
     .footer__box {
         width: 134px;
         gap: 0px;
-
-        p {
-            font-size: 12px;
-        }
     }
+
+    .footer__copyright--size {
+        font-size: 12px;
+    }
+
 
     // *********** partie page d'acceuil *********** //
 
     .banner {
         height: 111px;
+        border-radius: 10px;
     }
 
+    .banner__home {
+        align-items: flex-start;
+
+        h1 {
+            padding-left: 16px;
+        }
+    }
+
+    .mobile-break {
+        display: block;
+    }
 
     .main__home {
         gap: 22px;
@@ -258,6 +225,7 @@
 
     .tag__box .tag__line .tag {
         font-size: 10px;
+        border-radius: 5px;
     }
 
     .arrow__box .arrow {
@@ -297,6 +265,14 @@
 
     .slideshow {
         height: 225px;
+    }
+
+    .slideshow__img {
+        border-radius: 10px;
+    }
+
+    .slideshow__counter {
+        display: none;
     }
 
     .host__container {

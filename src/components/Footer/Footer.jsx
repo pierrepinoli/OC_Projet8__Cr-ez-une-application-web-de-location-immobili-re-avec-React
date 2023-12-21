@@ -8,7 +8,7 @@ function Footer() {
         <div className="footer">
             <div className="footer__box">
                 <img className="footer__logo--size footer__logo--color" src={logo} alt="Logo Kasa" />
-                <p>© 2020 Kasa. All rights reserved</p> 
+                <p className="footer__copyright">© 2020 Kasa. All rights reserved</p> 
             </div>
         </div>
     </footer>
