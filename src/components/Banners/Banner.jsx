@@ -2,7 +2,7 @@
 //utilisation d'une props pour exporter le composant bannière vers le composant parent //
 
 const Banner = (props) => { 
-  
+
   // établissement du DOM 
   return (
     <div className={`banner ${props.className}`}>
@@ -13,5 +13,3 @@ const Banner = (props) => {
 
 //exportation du composant
 export default Banner;
-
-

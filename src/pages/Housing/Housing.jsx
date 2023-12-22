@@ -28,18 +28,16 @@ const Housing = () => {
 
     {/* importation du composant slideshow */}
       <Slideshow pictures={housingData.pictures} />
-
       <section className="section__housing">
         
         {/* div conteant : le titre, le sous-titre et les tags */}
         <div className="title__box">
           <h2>{housingData.title}</h2>
           <p>{housingData.location}</p>
-          <div className="tag__box">
-            
-            <div className="tag__line">
+
+          {/* disposition en grille pour mieux gérer les grandes listes de tag */}
+          <div className="tag__grid">
               {housingData.tags.map(tag => (<div key={tag} className="tag">{tag}</div>))}
-            </div> 
           </div>
         </div>
 

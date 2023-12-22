@@ -1,9 +1,10 @@
-.footer {
+footer {
     background-color: black;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
     align-items: center;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .footer__box {
@@ -15,10 +16,6 @@
 
     p {
         color: #FFF;
-    }
-
-    .footer__copyright--size {
-        font-size: 24px;
     }
 
     &.footer__logo--color {

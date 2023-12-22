@@ -15,8 +15,6 @@
     //passage à 2 colonnes 
     .cards__grid {
         grid-template-columns: repeat(2, 1fr);
-        background-color: initial;
-        padding: 0;
     }
 
     // *********** responsive du header *********** //
@@ -48,8 +46,14 @@
         height: 330px;
     }
 
-    .tag__box .tag__line .tag {
-        font-size: 12px;
+    // passage a 3 colonnes //
+    .tag__grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        & .tag {
+            font-size: 12px;
+            border-radius: 5px;
+        }
     }
 
     .chevron__icon {
@@ -125,7 +129,7 @@
 }
 
 
-/********************************* Responsive pour smartphones [0px;768px[ **************************************/
+/********************************* Responsive pour smartphones [375px;768px[ **************************************/
 
 @media screen and (max-width: 767px) {
 
@@ -147,7 +151,12 @@
     .cards__grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 22px;
+        // suppression du fond gris //
+        background-color: initial;
+        padding: 0;
     }
+
+
 
     .card {
         height: 255px;
@@ -185,12 +194,14 @@
     }
 
     // *********** responsive du header *********** //
-    .header {
-        margin-bottom: 27px;
+    header {
         padding-left: 5%;
         padding-right: 5%;
     }
 
+    .header--margin {
+        margin-bottom: 27px;
+    }
 
     .navbar ul {
         gap: 26px;
@@ -208,7 +219,7 @@
 
 
     // ************ responsive du footer ************* //
-    .footer {
+    .footer--margin {
         margin-top: 27px;
     }
 
@@ -246,10 +257,20 @@
         font-size: 18px;
     }
 
-    .tag__box .tag__line .tag {
+    .tag__grid {
+
+        & .tag {
+            font-size: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    .tag__line .tag {
         font-size: 10px;
         border-radius: 5px;
     }
+
+
 
     .arrow__box .arrow {
         width: 24px;
@@ -322,5 +343,36 @@
 
     .notfound__main h2 {
         font-size: 18px;
+    }
+}
+
+//*************************************** Responsive pour petits smartphones [0px;375px[ ********************************//
+
+@media screen and (max-width: 374px) {
+
+    // ** responsive du header ** //
+
+    .header__logo--size {
+        width: 87px;
+        height: 28.128px;
+    }
+
+    .navbar ul {
+        gap: 14px;
+        padding-left: 0;
+    }
+
+    .navbar__box--typography {
+        font-size: 10px;
+    }
+
+    // ** responsive de la page housing ** //
+    .tag__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // ** responsive de la page 404 ** //
+    .notfound__main {
+        gap: 68px;
     }
 }

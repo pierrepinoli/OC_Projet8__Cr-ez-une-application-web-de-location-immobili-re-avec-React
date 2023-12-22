@@ -8,7 +8,7 @@ import logo from "../../assets/logo/logo-kasa.png";
 function Header() {
     // établissement du DOM
     return (
-        <header>
+        <header className="header--margin">
             <div className="navbar__box navbar__box--typography">
                 <img className="header__logo--size" src={logo} alt="Logo Kasa" />
                 <nav className="navbar">
