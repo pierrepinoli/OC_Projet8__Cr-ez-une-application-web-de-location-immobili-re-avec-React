@@ -7,13 +7,15 @@ import bannerpicPath from '../../assets/images/mountains.png';
 
 
 function About() {
+     // établissement du DOM
     return (
         <main className="main__about">
-            
+            {/* importation de l'image de la bannière*/}
             <Banner imageSrc={bannerpicPath} />
             
             <section>
                 <div className="collapse__box">
+                {/* utilisation des props enfants pour remplir les collapses */}
                     <Collapse 
                         title="Fiabilité" 
                         content="Les annonces postées sur Kasa garantissent une fiabilité totale. 

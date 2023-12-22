@@ -1,14 +1,13 @@
-/*************************************** Styles pour tablettes ********************************/
+//*************************************** Responsive pour tablettes [768px;1024px] ********************************//
 
 @media screen and (max-width: 1023px) {
 
-    // *********** partie générale *********** //
+    // *********** responsive général *********** //
     h1 {
         font-size: 30px;
     }
 
-    // *********** partie page d'acceuil *********** //
-
+    // *********** responsive de la page d'acceuil *********** //
     .banner {
         height: 180px;
     }
@@ -20,8 +19,7 @@
         padding: 0;
     }
 
-    // *********** partie header *********** //
-
+    // *********** responsive du header *********** //
     .header__logo--size {
         width: 145px;
         height: 46.881px;
@@ -35,7 +33,7 @@
         font-size: 18px;
     }
 
-    // ************** partie housing **************** //
+    // ************** responsive de la page housing **************** //
     .title__box h2 {
         font-size: 24px;
     }
@@ -112,8 +110,7 @@
         color: #E3E3E3;
     }
 
-    // *********** page 404 *********** //
-
+    // *********** responsive de la page 404 *********** //
     .notfound__main {
         gap: 126px;
     }
@@ -127,10 +124,12 @@
     }
 }
 
-/********************************* Styles pour smartphones **************************************/
+
+/********************************* Responsive pour smartphones [0px;768px[ **************************************/
+
 @media screen and (max-width: 767px) {
 
-    // *********** partie générale *********** //
+    // *********** responsive général *********** //
     main {
         padding-left: 5%;
         padding-right: 5%;
@@ -141,7 +140,51 @@
         overflow: initial;
     }
 
-    // *********** partie header *********** //
+    // ********** responsive des composants ********** //
+
+    // ** responsive des cartes ** // 
+    //passage à 1 colonne
+    .cards__grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 22px;
+    }
+
+    .card {
+        height: 255px;
+    }
+
+    // ** responsive de la bannières ** //
+    .banner {
+        height: 111px;
+        border-radius: 10px;
+    }
+
+    // ** responsive des collapses ** //
+    .collapse__container {
+
+        & .collapse__header {
+            font-size: 13px;
+        }
+    }
+
+    .collapse__txt {
+        font-size: 12px;
+    }
+
+    // ** responsive du carrousel ** //
+    .slideshow {
+        height: 225px;
+    }
+
+    .slideshow__img {
+        border-radius: 10px;
+    }
+
+    .slideshow__counter {
+        display: none;
+    }
+
+    // *********** responsive du header *********** //
     .header {
         margin-bottom: 27px;
         padding-left: 5%;
@@ -163,7 +206,8 @@
         text-transform: uppercase;
     }
 
-    // ************ partie footer ************* //
+
+    // ************ responsive du footer ************* //
     .footer {
         margin-top: 27px;
     }
@@ -178,13 +222,7 @@
     }
 
 
-    // *********** partie page d'acceuil *********** //
-
-    .banner {
-        height: 111px;
-        border-radius: 10px;
-    }
-
+    // *********** responsive de la page d'acceuil *********** //
     .banner__home {
         align-items: flex-start;
 
@@ -193,6 +231,7 @@
         }
     }
 
+    // force le retour a la ligne du banner__home h1 //
     .mobile-break {
         display: block;
     }
@@ -202,19 +241,7 @@
         padding-bottom: 5px;
     }
 
-    //passage à 1 colonne
-    .cards__grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 22px;
-    }
-
-    .card {
-        height: 255px;
-    }
-
-
-    // ********** partie housing *********** //
-
+    // ********** responsive de la page housing *********** //
     .title__box h2 {
         font-size: 18px;
     }
@@ -241,17 +268,6 @@
         gap: 20px;
     }
 
-    .collapse__container {
-
-        & .collapse__header {
-            font-size: 13px;
-        }
-    }
-
-    .collapse__txt {
-        font-size: 12px;
-    }
-
     .section__housing {
         display: flex;
         flex-direction: column;
@@ -260,18 +276,6 @@
         & p {
             font-size: 14px;
         }
-    }
-
-    .slideshow {
-        height: 225px;
-    }
-
-    .slideshow__img {
-        border-radius: 10px;
-    }
-
-    .slideshow__counter {
-        display: none;
     }
 
     .host__container {
@@ -307,8 +311,7 @@
         color: #E3E3E3;
     }
 
-    // *********** page 404 *********** //
-
+    // *********** responsive de la page 404 *********** //
     .notfound__main {
         gap: 113px;
     }

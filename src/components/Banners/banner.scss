@@ -7,9 +7,10 @@
     border-radius: 25px;
     overflow: hidden;
 
+    // assombrissement du fond de la bannière
     &.image--brightness {
         img {
-            filter: brightness(0.8); // ajustez la valeur selon vos besoins
+            filter: brightness(0.8);
         }
     }
 }
@@ -17,7 +18,6 @@
 h1 {
     color: #FFF;
     font-size: 48px;
-    font-style: normal;
     position: absolute;
     font-weight: 500;
 }

@@ -32,5 +32,6 @@
     height: 100%;
     background-size: cover;
     background-position: center;
+    // assombrissement en degradé afin d'améliorer la lecture des titres
     box-shadow: inset 0px -90px 60px -50px rgba(0, 0, 0, 0.5);
 }

@@ -6,6 +6,7 @@ import logo from "../../assets/logo/logo-kasa.png";
 
 
 function Header() {
+    // établissement du DOM
     return (
         <header>
             <div className="navbar__box navbar__box--typography">
@@ -13,6 +14,7 @@ function Header() {
                 <nav className="navbar">
                     <ul>
                         <li>
+                            {/* utilisation de la fonction isActive de NavLink afin de definir l'état actif du lien */}
                             <NavLink to="/" className={({isActive}) => (isActive ? "active" : "")}>Accueil</NavLink>
                         </li>
                         <li>

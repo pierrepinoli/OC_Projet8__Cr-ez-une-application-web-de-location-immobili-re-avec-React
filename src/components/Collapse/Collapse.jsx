@@ -1,11 +1,13 @@
-// importation des dependances
+// importation des dépendances
 import React, { useState } from 'react';
 
 // importation des icones de Fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-// definition du composant 
+// définition du composant 
+// utilisation du Hook useState pour determineur deux etats : "ouvert" ou "non-ouvert"
+// utilisation de props "title" et "content" pour transmettre aux parents le titre et le contenu 
 const Collapse = ({ title, content }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
@@ -28,12 +30,12 @@ const Collapse = ({ title, content }) => {
             className={`chevron__icon ${isCollapsed ? 'chevron__rotate--close' : 'chevron__rotate--open'}` }
           />
         </span>
-      </div>  
-      <div className={`collapse__content ${isCollapsed ? 'collapse__content--reduce' : 'collapse__content--expand'}`}>
-      
-        <div className={`collapse__txt ${isCollapsed ? 'collapse__txt--reduce' : 'collapse__txt--expand'}`}>{content}</div>
-      
       </div>
+
+      <div className={`collapse__content ${isCollapsed ? 'collapse__content--reduce' : 'collapse__content--expand'}`}>
+        <div className={`collapse__txt ${isCollapsed ? 'collapse__txt--reduce' : 'collapse__txt--expand'}`}>{content}</div>
+      </div>
+      
     </div>  
   );
 };

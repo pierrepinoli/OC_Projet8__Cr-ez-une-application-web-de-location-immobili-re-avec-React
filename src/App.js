@@ -8,13 +8,17 @@ import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
+  // etablisement du DOM
   return (
+    // utilisation des balises Router, Routes, Route de react-router-dom pour definir les chemins de navigations 
     <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
+        {/* determine le chemin en fonction de l'id */}
         <Route path="/Housing/:id" element={<Housing />} />
+        {/* si le chemin n'existe pas l'utilisateur est redirigé vers la page 404 */}
         <Route path="*" element={<Notfound />} />
       </Routes>
       <Footer />
@@ -22,4 +26,5 @@ function App() {
   );
 }
 
+//exportation du composant app
 export default App;

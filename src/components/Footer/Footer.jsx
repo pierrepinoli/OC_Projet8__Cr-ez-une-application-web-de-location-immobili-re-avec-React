@@ -3,6 +3,8 @@ import logo from "../../assets/logo/logo-kasa-white.png"
 import './footer.scss';
 
 function Footer() {
+    
+   // établissement du DOM
     return (
         <footer>
         <div className="footer">

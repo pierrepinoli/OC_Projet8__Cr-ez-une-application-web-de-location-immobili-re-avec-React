@@ -44,38 +44,40 @@
 
 // ************** ANIMATIONS ****************//
 
-// animations des chevrons 
+// ** animations des chevrons ** //
 // Ajout d'une transition pour l'effet d'animation 
 .chevron__rotate--open,
 .chevron__rotate--close {
     transition: transform 0.3s ease-in-out;
 }
 
-// Rotation à 180 degrés pour le chevron vers le bas 
+// Rotation à 180 degrés du chevron vers le bas 
 .chevron__rotate--open {
     transform: rotate(-180deg);
 }
 
-/* ajout d'une transition pour l'effet d'animation */
+// ** animations du collapse ** //
+// ajout d'une transition pour l'effet d'animation //
+// Utilisation de max-height uniquement
 .collapse__content--reduce {
-    height: 0;
-    transition: max-height ease-in-out 0.3s, padding 0.3s ease-out;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
 }
 
 .collapse__content--expand {
     max-height: 1000px;
-    transition: max-height ease-in 0.7s, padding 0.3s ease-out;
+    transition: max-height 0.7s ease-in;
 }
 
-
+// effets de translation du texte //
 .collapse__txt--reduce {
     transform: translateY(-100%);
     opacity: 0;
-    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-out;
 }
 
 .collapse__txt--expand {
     transform: translateY(0);
     opacity: 1;
-    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-out;
 }
