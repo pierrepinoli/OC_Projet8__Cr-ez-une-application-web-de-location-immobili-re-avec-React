@@ -13,7 +13,7 @@ import data from '../../assets/logements.json';
 const Housing = () => {
   const { id } = useParams();
 
-  // Utilisez l'ID pour obtenir les données spécifiques de votre fichier JSON
+  // Utilisez l'ID pour obtenir les données spécifiques du fichier JSON
   const housingData = data.find(item => item.id === id);
   console.log("Pictures:", housingData ? housingData.pictures : null);
 
