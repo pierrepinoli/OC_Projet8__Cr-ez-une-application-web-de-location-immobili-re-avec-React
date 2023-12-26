@@ -6,6 +6,7 @@ import { Navigate , useParams } from 'react-router-dom';
 import Collapse from '../../components/Collapse/Collapse.jsx';
 import Slideshow from '../../components/Slideshow/Slideshow.jsx';
 import StarRating from '../../components/StarRating/StarRating.jsx';
+import Tags from '../../components/Tags/Tags.jsx';
 
 // importations des fichiers annexes
 import data from '../../assets/logements.json';
@@ -32,11 +33,9 @@ const Housing = () => {
         <div className="title__box">
           <h2>{housingData.title}</h2>
           <p>{housingData.location}</p>
-
-          {/* disposition en grille pour mieux gérer les grandes listes de tag */}
-          <div className="tag__grid">
-              {housingData.tags.map(tag => (<div key={tag} className="tag">{tag}</div>))}
-          </div>
+          
+          {/* importation du composant tags */}
+          <Tags tagContent={housingData.tags} />
         </div>
 
         {/* div contenant : la photo de profil, le nom et la notation */}
