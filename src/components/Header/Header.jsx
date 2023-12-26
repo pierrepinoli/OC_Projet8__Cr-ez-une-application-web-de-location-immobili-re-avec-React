@@ -10,7 +10,8 @@ function Header() {
     return (
         <header className="header--margin">
             <div className="navbar__box navbar__box--typography">
-                <img className="header__logo--size" src={logo} alt="Logo Kasa" />
+                <NavLink to="/"> <img className="header__logo--size" src={logo} alt="Logo Kasa" /></NavLink>
+               
                 <nav className="navbar">
                     <ul>
                         <li>

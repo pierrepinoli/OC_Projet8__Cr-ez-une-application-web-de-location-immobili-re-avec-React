@@ -15,8 +15,6 @@ const Housing = () => {
 
   // Utilisez l'ID pour obtenir les données spécifiques du fichier JSON
   const housingData = data.find(item => item.id === id);
-  console.log("Pictures:", housingData ? housingData.pictures : null);
-
   // Si l'ID n'est pas spécifiée ou le logement n'est pas trouvé, redirige vers la page 404
   if (!id || !housingData) {
     return <Navigate to="*" />;

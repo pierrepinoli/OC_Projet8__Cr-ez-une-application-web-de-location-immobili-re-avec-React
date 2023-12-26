@@ -19,12 +19,11 @@ const Collapse = ({ title, content }) => {
   return (
     <div className="collapse__container">
     
-      <div className="collapse__header">
+      <div className="collapse__header" onClick={toggleCollapse}>
         <span>{title}</span>
         <span>
           {/* appel des icônes de Fontawesome */}
           <FontAwesomeIcon
-            onClick={toggleCollapse}
             icon={faChevronUp}
             // définition des classes CSS
             className={`chevron__icon ${isCollapsed ? 'chevron__rotate--close' : 'chevron__rotate--open'}` }
